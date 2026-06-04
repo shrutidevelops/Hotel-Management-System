@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+</head>
+</head>
+<style>
+#login
+{
+ 
+  background: url(loginpic.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+<body id="login">
+<form name=f method=post action=login.jsp>
+<table border="1" align="center">
+<tr>
+    <td>LOGIN ID</td>
+    <td><input type=text name=t1 placeholder="Enter your username"></td>
+</tr>
+<tr>
+    <td>PASSWORD</td>
+    <td><input type=password name=t2 placeholder="Enter your password"></td>
+</tr>
+<tr>
+    <td colspan="2" align="center">
+        <input type="submit" value="Login" name="b1">
+        <input type=button value="Register" onclick=open1()>
+    </td>
+</tr>
+</table>
+</form>
+</body>
+<script>
+function open1()
+{
+	window.open("register.html")
+}
+</script>
+</html>

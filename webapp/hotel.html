@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hotel Information</title>
+</head>
+</head>
+<style>
+#hotel2
+{
+ 
+  background: url(hotel2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+<body id="hotel2">
+<body>
+<form name=f method=post action=hotel.jsp>
+<table border="1" align="center">
+<tr>
+    <td>HOTEL CODE</td>
+    <td><input type=text name=t1></td>
+</tr>
+<tr>
+    <td>EMPLOYEE ID</td>
+    <td><input type=text name=t2></td>
+</tr>
+
+<tr>
+    <td>LOCATION</td>
+    <td><input type=text name=t3></td>
+</tr>
+
+<tr>
+    <td>HOTEL NAME</td>
+    <td><input type=text name=t4></td>
+</tr>
+
+<tr>
+    <td>CREATED DATE</td>
+    <td><input type=date name=t5></td>
+</tr>
+
+<tr>
+    <td>CREATED BY</td>
+    <td><input type=text name=t6></td>
+</tr>
+<tr>
+<th colspan=2><input type=button value=New onclick=a()>
+<input type=submit value=Save name=b1>
+<input type=submit value=Update name=b1>
+<input type=submit value=Delete name=b1>
+</th>
+</tr>
+<tr>
+<th colspan=2>
+<input type=submit value=Allsearch name=b1>
+<input type=submit value=PSearch name=b1>
+<input type=button value=Home name=b1 onclick="call()">
+<input type=button value=Spsearch name=b1 onclick="callme()">
+</th>
+</tr>
+</table>
+</form>
+</body>
+<script>
+function call()
+{
+  window.open('menu.html')
+}
+function callme()
+{
+   window.open("spsearch.html")
+}
+</script>
+</html>

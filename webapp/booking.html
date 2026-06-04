@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Booking</title>
+</head>
+<style>
+#hotel2 
+{
+ 
+  background: url(hotel2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+<body id="hotel2">
+<form name=f method=post action=booking.jsp>
+<table border="1" align="center">
+<tr>
+    <td>BOOKING ID</td>
+    <td><input type=text name=t1></td>
+</tr>
+
+<tr>
+    <td>ROOM ID</td>
+    <td><input type=text name=t2></td>
+</tr>
+
+<tr>
+    <td>CUSTOMER ID</td>
+    <td><input type=text name=t3></td>
+</tr>
+
+<tr>
+    <td>CHECK IN</td>
+    <td><input type=date name=t4></td>
+</tr>
+
+<tr>
+    <td>CHECK OUT</td>
+    <td><input type=date name=t5></td>
+</tr>
+
+<tr>
+    <td>PHONE NUMBER</td>
+    <td><input type=number name=t6></td>
+</tr>
+
+<tr>
+    <td>REFERENCE </td>
+    <td><input type=text name=t7></td>
+</tr>
+
+<tr>
+    <td>CREATED DATE</td>
+    <td><input type=date name=t8></td>
+</tr>
+
+<tr>
+    <td>CREATED BY</td>
+    <td><input type=text name=t9></td>
+</tr>
+<tr>
+<th colspan=2><input type=button value=New onclick=a()>
+<input type=submit value=Save name=b1>
+<input type=submit value=Update name=b1>
+<input type=submit value=Delete name=b1>
+</th>
+</tr>
+<tr>
+<th colspan=2>
+<input type=submit value=Allsearch name=b1>
+<input type=submit value=PSearch name=b1>
+<input type=button value=Home name=b1 onclick="call()">
+<input type=button value=Spsearch name=b1 onclick="callme()">
+</th>
+</tr>
+</table>
+</form>
+</body>
+<script>
+function call()
+{
+  window.open('menu.html')
+}
+function callme()
+{
+   window.open("spsearch.html")
+}
+</script>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Search</title>
+</head>
+</head>
+<style>
+#spsearch
+{
+ 
+  background: url(spsearch.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+<body id="spsearch">
+<body>
+
+<table border=1 align="center">
+<tr>
+<form name=f method=post action=job_info.jsp>
+<th> Job_info</th>
+<th> <select name=s>
+     <option value=all>ALL SEARCH
+     <option value=job_id>JOB ID
+     <option value=job_title>TITLE
+     <option value=status>STATUS
+     <option value=created_date>DATE
+     <option value=created_by>BY
+     
+ </th>
+ <th><input type=text name=t1></th>
+ <th><input type=submit value=Find name=b1></th>   
+ </form>
+ </tr>
+ <tr>
+<form name=f method=post action=emp_info.jsp>
+<th> Emp_info</th>
+<th> <select name=s>
+     <option value=all>ALL SEARCH
+     <option value=emp_id>EMPLOYEE ID
+     <option value=emp_name>NAME
+     <option value=address>ADDRESS
+     <option value=status>STATUS
+     <option value=nationality>NATIONALITY
+     <option value=created_date>DATE
+     <option value=created_by>BY
+     <option value=gender>GENDER
+     <option value=dept_id>DEPARTMENT ID
+     <option value=job_id>JOB ID
+ </th>
+ <th><input type=text name=t1></th>
+ <th><input type=submit value=Find name=b1></th> 
+ </form> 
+ </tr>
+ <tr>
+ <form name=f method=post action=dept_info.jsp>
+ <th> Dept_info</th>
+<th> <select name=s>
+     <option value=all>ALL SEARCH
+     <option value=dept_id>DEPARTMENT ID
+     <option value=dept_name>NAME
+     <option value=dept_desc>DESCRIPTION
+     <option value=status>STATUS
+     <option value=created_date>DATE
+     <option value=created_by>BY
+ </th>
+ <th><input type=text name=t1></th>
+ <th><input type=submit value=Find name=b1></th>   
+ </form>
+ </tr>
+ <tr>
+ <form name=f method=post action=hotel.jsp>
+ <th>Hotel</th>
+<th> <select name=s>
+     <option value=all>ALL SEARCH
+     <option value=hotel_code>HOTEL CODE
+     <option value=emp_id>EMPLOYEE ID
+     <option value=location>LOCATION
+     <option value=hotel_name>HOTEL NAME
+     <option value=created_date>DATE
+     <option value=created_by>BY
+ </th>
+ <th><input type=text name=t1></th>
+ <th><input type=submit value=Find name=b1></th>   
+ </form>
+ </tr>
+ <tr>
+ <form name=f method=post action=booking.jsp>
+ <th>Booking</th>
+<th> <select name=s>
+     <option value=all>ALL SEARCH
+     <option value=booking_id>BOOKING ID
+     <option value=room_id>EMPLOYEE ID
+     <option value=customer_id>CUSTOMER ID
+     <option value=check_in>CHECK IN
+     <option value=check_out>CHECK OUT
+     <option value=phone_no>PHONE NUMBER
+     <option value=reference>REFERENCE
+     <option value=created_date>DATE
+     <option value=created_by>BY
+ </th>
+ <th><input type=text name=t1></th>
+ <th><input type=submit value=Find name=b1></th>   
+ </form>
+ </tr>
+ <tr>
+ <form name=f method=post action=customer.jsp>
+ <th>Customer</th>
+<th> <select name=s>
+     <option value=all>ALL SEARCH
+     <option value=customer_id>CUSTOMER ID
+     <option value=customer_name>CUSTOMER NAME
+     <option value=address>ADDRESS
+     <option value=mob_no>MOBILE NUMBER
+     <option value=dob>DATE OF BIRTH
+     <option value=gender>GENDER
+     <option value=marital_status>MARITAL STATUS
+     <option value=created_date>DATE
+     <option value=created_by>BY
+ </th>
+ <th><input type=text name=t1></th>
+ <th><input type=submit value=Find name=b1></th>   
+ </form>
+ </tr>
+ <tr>
+ <form name=f method=post action=room.jsp>
+ <th>Room</th>
+<th> <select name=s>
+     <option value=all>ALL SEARCH
+     <option value=room_id>ROOM ID
+     <option value=hotel_code>HOTEL CODE
+     <option value=room_type_id>ROOM TYPE ID
+     <option value=total_days>TOTAL DAYS
+     <option value=room_charge>ROOM CHARGE
+     <option value=created_date>DATE
+     <option value=created_by>BY
+ </th>
+ <th><input type=text name=t1></th>
+ <th><input type=submit value=Find name=b1></th>   
+ </form>
+ </tr>
+ <tr>
+ <form name=f method=post action=room_type.jsp>
+ <th>Room type</th>
+<th> <select name=s>
+     <option value=all>ALL SEARCH
+     <option value=room_type_id>ROOM TYPE ID
+     <option value=no_of_bed>NUMBER OF BED
+     <option value=type_name>ROOM TYPE NAME
+     <option value=status>STATUS
+     <option value=created_date>DATE
+     <option value=created_by>BY
+ </th>
+ <th><input type=text name=t1></th>
+ <th><input type=submit value=Find name=b1></th>   
+ </form>
+ </tr>
+ <tr>
+ <form name=f method=post action=payment.jsp>
+ <th>Payment</th>
+<th> <select name=s>
+     <option value=all>ALL SEARCH
+     <option value=payment_id>PAYMENT ID
+     <option value=invoice_id>INVOICE ID
+     <option value=payment_date>DATE
+     <option value=total_amt>TOTAL AMOUNT
+     <option value=paid_date>PAID DATE
+     <option value=created_date>DATE
+     <option value=created_by>BY
+ </th>
+ <th><input type=text name=t1></th>
+ <th><input type=submit value=Find name=b1></th>   
+ </form>
+ </tr>
+ <tr>
+ <form name=f method=post action=invoice.jsp>
+ <th>Invoice</th>
+<th> <select name=s>
+     <option value=all>ALL SEARCH
+     <option value=invoice_id>INVOICE ID
+     <option value=customer_id>CUSTOMER ID
+     <option value=booking_id>BOOKING ID
+     <option value=discount>DISCOUNT
+     <option value=gst>GST
+     <option value=created_date>DATE
+     <option value=created_by>BY
+ </th>
+ <th><input type=text name=t1></th>
+ <th><input type=submit value=Find name=b1></th>   
+ </form>
+ </tr>
+</table>
+</body>
+</html>
